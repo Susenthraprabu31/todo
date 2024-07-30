@@ -1,0 +1,117 @@
+/* style code for page title */
+.title{
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 50px;
+  color: #26b046;
+}
+
+/* Form CSS code for add Task and edit */
+.form-content-wrap{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-control.todoName, .form-control.todoDescription, .btn {
+  height: 100%;
+}
+
+.form-control{
+  border: 1px solid #26b046;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 6px #26b046;
+}
+
+/* made bar  content div to relative to position the logo and filter */
+.todo-content-wrap{
+  position: relative;
+}
+
+/* making the mytodo logo to place left side */
+.mytoDo-bar-title{
+  font-weight: bold;
+  font-size: large;
+  position: absolute;
+  left: 0;
+}
+
+/* making select filter label to place right next to filter */
+.status-filter-lable{
+  position: absolute;
+  right: 140px;
+}
+
+/* making filter to place right side */
+.status-filter-select{
+  position: absolute;
+  right: 0;
+  background-color: #d77b7b;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* setting up dropdown option bg color */
+.status-filter-select > option{
+  background-color: #fbfbfb;
+}
+
+/* code to setup margin for card */
+.todo-wrap{
+  margin-top: 40px;
+}
+
+/* setting up margin card status in card  content */
+.card-status{
+  margin-bottom: 10px;
+}
+
+/* setting up status label margin such as status filter and status */
+.status-label{
+  margin-right: 4px;
+}
+
+/* setting up button margin */
+.edit,.delete{
+  margin: 5px;
+}
+
+/* code to make link test style and color */
+.edit-link,.delete-link{
+  text-decoration: none;
+  color: white;
+}
+
+/* dropdown radius setup */
+#status{
+border-radius: 4px;
+/* background-color: #d77b7b; */
+}
+
+/* dropdown option color style code */
+#status>option{
+  background-color: #fbfbfb;
+}
+
+/* setup for vard bg color */
+.card{
+  background-color: #bee8c8;
+  margin-top: 20px;
+}
+
+/* Made card  display to arrange in row */
+.card-display{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* To  handle screen responsive */
+@media only screen and (max-width: 720px) {
+  .form-control.todoName, .form-control.todoDescription, .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
